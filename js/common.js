@@ -1,17 +1,13 @@
 // ========================>
 // slider for reviews
 // <=======================
-var swiper = new Swiper('.sect4__slider', {
+var swiper = new Swiper('.sect7__slider', {
   pagination: {
-    el: '.swiper-pagination',
+    el: '.sect7__pagination',
     clickable: true,
   },
   // loop: true,
   autoHeight: true,
-  navigation: {
-    nextEl: '.sect4__next',
-    prevEl: '.sect4__prev',
-  },
   spaceBetween: 40
 });
 // ========================>
