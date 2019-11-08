@@ -1,0 +1,125 @@
+
+html
+  font-size: 26.666666666667vw
+  background: #fff
+  @media (min-width: 480px)
+    font-size: 128px
+    overflow-x: hidden
+body
+  font-size: .14rem
+  max-width: 480px
+  margin: auto
+  position: relative
+  line-height: 1.4
+  font-weight: 400
+  font-family: 'Noto Sans', sans-serif
+  color: #fff
+  overflow-x: hidden
+  background-color: #3b3c3d
+  input, textarea
+    outline: none
+    &:focus:required:invalid
+      border-color: red
+    &:required:valid
+      border-color: green
+
+section
+  padding: .7rem 0
+  &.no-pad
+    padding: 0
+.img-wrap
+  display: flex
+  align-items: center
+  justify-content: center
+  &.pad
+    padding: 0 .2rem
+  &.mar
+    margin: .3rem 0
+img
+  width: 100%
+.content
+  padding: 0 .33rem
+  p
+    line-height: 0.21rem
+    &:last-child
+      margin-bottom: 0
+h2
+  font-size: 0.24rem
+  line-height: 0.36rem
+  text-transform: uppercase
+  font-weight: bold
+  color: #f8b477
+  font-weight: normal
+  padding: 0 .33rem
+  margin-bottom: 0.4rem
+  margin-top: 0
+  .smaller
+    font-size: 0.2rem
+.t-center
+  text-align: center
+.t-white
+  color: #fff
+span.accent
+  color: $accent
+.btn
+  display: block
+  width: 3.1rem
+  height: 0.74rem
+  margin: auto
+  background-color: #ab6d35
+  text-transform: uppercase
+  animation: btn 3s linear infinite
+  font-weight: bold
+  font-size: 0.18rem
+  text-transform: uppercase
+  color: #fff
+  border: none
+  display: flex
+  align-items: center
+  justify-content: center
+  text-decoration: none
+  border-radius: 10px
+  span
+    text-align: center
+    display: block
+    width: 100%
+.border__top
+  width: 4.8rem
+  position: absolute
+  top: -0.28rem
+  left: 0
+  right: 0
+.border__bot
+  width: 4.8rem
+  position: absolute
+  bottom: -0.28rem
+  left: 0
+  right: 0
+// animation
+@keyframes btn
+  0%
+    transform: scale(1)
+  50%
+    transform: scale(1.06)
+  100%
+    transform: scale(1)
+
+
+.pulse__btn
+  position: fixed
+  right: 0.2rem
+  display: inline-block
+  bottom: 0.2rem
+  z-index: 12
+  box-shadow: 0 0 0 rgba(11, 138, 44, 0.4)
+  width: 0.7rem
+  height: 0.7rem
+  border-radius: 50%
+  animation: pulse 2s infinite
+  transition: all .9s ease
+  &.show
+    right: -100%
+  img
+    width: 100%
+.header__btn
+  margin-top: 0.2rem
